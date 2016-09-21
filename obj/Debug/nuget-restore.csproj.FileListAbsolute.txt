@@ -1,0 +1,6 @@
+C:\Projects\nuget-restore\bin\Debug\nuget-restore.exe.config
+C:\Projects\nuget-restore\bin\Debug\nuget-restore.exe
+C:\Projects\nuget-restore\bin\Debug\nuget-restore.pdb
+C:\Projects\nuget-restore\obj\Debug\nuget-restore.csprojResolveAssemblyReference.cache
+C:\Projects\nuget-restore\obj\Debug\nuget-restore.exe
+C:\Projects\nuget-restore\obj\Debug\nuget-restore.pdb
