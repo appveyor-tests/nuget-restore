@@ -1,3 +1,8 @@
 version: 1.0.{build}
-build:
-  verbosity: minimal
+
+
+before_build: 
+  - ps: nuget restore
+  - ps: 'if (-not Test-Path $env:APPVEYOR_BUILD_FOLDER\packages){ throw "packages not restored"; }'
+
+build: off
