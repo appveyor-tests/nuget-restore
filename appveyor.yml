@@ -3,6 +3,6 @@ version: 1.0.{build}
 
 before_build: 
   - ps: nuget restore -PackagesDirectory $env:APPVEYOR_BUILD_FOLDER\packages
-  - ps: 'if (-not Test-Path $env:APPVEYOR_BUILD_FOLDER\packages){ throw "packages not restored"; }'
+  - ps: 'if (-not (Test-Path $env:APPVEYOR_BUILD_FOLDER\packages)){ throw "packages not restored"; }'
   - ps: Write-Host "passed"
 
