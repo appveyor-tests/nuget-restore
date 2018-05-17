@@ -1,5 +1,7 @@
 version: 1.0.{build}
 
+init:
+- nuget
 
 before_build: 
   - ps: nuget restore -PackagesDirectory $env:APPVEYOR_BUILD_FOLDER\packages
