@@ -3,6 +3,9 @@ version: 1.0.{build}
 init:
 - nuget
 
+nuget:
+  account_feed: true
+
 before_build: 
   - ps: nuget restore -PackagesDirectory $env:APPVEYOR_BUILD_FOLDER\packages
   - ps: 'if (-not (Test-Path $env:APPVEYOR_BUILD_FOLDER\packages)){ throw "packages not restored"; }'
