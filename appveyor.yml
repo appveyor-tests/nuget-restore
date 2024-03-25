@@ -7,7 +7,7 @@ nuget:
   account_feed: true
 
 before_build: 
-  - ps: nuget restore -PackagesDirectory $env:APPVEYOR_BUILD_FOLDER\packages
+  - ps: nuget restore -PackagesDirectory $env:APPVEYOR_BUILD_FOLDER\packages -source https://ci.appveyor.com/nuget/nuget-restore-tqjwhvk40u87
   - ps: 'if (-not (Test-Path $env:APPVEYOR_BUILD_FOLDER\packages)){ throw "packages not restored"; }'
   - ps: Write-Host "passed"
 
